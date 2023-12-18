@@ -44,10 +44,10 @@ const ImageCarousel = () => {
     hideDesc();
   };
 
-  useEffect(() => {
-    const intervalId = setInterval(goRight, 3500);
-    return () => clearInterval(intervalId);
-  }, []); // Empty dependency array to run the effect only once on mount
+  // useEffect(() => {
+  //   const intervalId = setInterval(goRight, 3500);
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   return (
     <div className='container'>
