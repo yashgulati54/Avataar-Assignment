@@ -1,0 +1,123 @@
+/* Common styles for both main menu items and dropdown items */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0fabf3;
+  padding: 16px 10px; /* Adjusted padding for better responsiveness */
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 12px; /* Adjusted margin for better spacing */
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+a.item:hover {
+  color: #83CEF9;
+}
+
+/* Styles for the "More" button and dropdown */
+.more {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  font-family: 'Lato', sans-serif;
+}
+
+.more:hover {
+  color: #83CEF9;
+}
+
+.more img {
+  margin-left: 8px;
+}
+
+.dropdown-content {
+  background-color: #394240;
+  display: none;
+  position: absolute;
+  top: 100%; /* Position below the "More" button */
+  left: 0;
+  border-radius: 8px;
+  border: 0.5px;
+  min-width: 150px; /* Adjusted min-width for better sizing */
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a {
+  display: flex;
+  color: white;
+  padding: 12px 16px; /* Adjusted padding for better spacing */
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #55646F;
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 16px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    margin: 8px 0;
+  }
+
+  .more {
+    margin-top: 16px;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,21 @@
+/* src/DropdownMenu.css */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+  
+    /* Update the positioning */
+    transform: translateX(-50%);
+    width: max-content;
+    margin-left: 50%;
+    white-space: nowrap;
+  }
+  
